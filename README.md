@@ -3,6 +3,7 @@
 - I thought my first challenge submission was made like [this](https://bsky.app/profile/pumaparded.bsky.social/post/3jzpgicbgza27)
 - Which is a still from a shader passed into blender, baked then passed back into a shader.
 - So I took stills from my first OP [sketch](https://openprocessing.org/sketch/1575927)
+- (Yes I was meant to make that sketch better but I tried that and it kept being worse.)
 - Baked [those](https://bsky.app/profile/pumaparded.bsky.social/post/3lc3h644ag22y)
 - Loaded it as a texture into R3f, passed the texture to the vertex shader and used that to distort.
 - Passed a texture into the vertex and messed it up a bit.
