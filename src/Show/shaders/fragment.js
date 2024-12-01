@@ -2,6 +2,8 @@ export default /* glsl */`uniform float uTime;
 
 varying vec2 vUv;
 uniform sampler2D pic;
+uniform sampler2D pic2;
+
 uniform float noise;
 
 float PI = 3.142;
@@ -101,6 +103,9 @@ void main() {
 
 
   vec4 tex = texture2D(pic, uv);
+
+  vec4 texA = texture2D(pic2, uv);
+
   vec4 tex2 = texture2D(pic, vec2(uv2.x, uv2.y));
   vec4 tex3 = texture2D(pic, uv3);
 
@@ -135,9 +140,9 @@ void main() {
   }
 
 
-if(color.r >.4){
-  color -= vec3(uv.x, uv.y, 1.);
-  coswarp(color, 3.);
+if(texA.r >.4){
+  color -= vec3(uv.x, uv.y, 1.) *.2;
+  coswarp(color, 3. * sin(t));
 
 }
   
